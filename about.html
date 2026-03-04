@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SV Architetti — About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loading">
+  <header class="site-header">
+    <div class="site-header__top">
+      <a href="index.html" class="site-header__logo">SV Architetti</a>
+    </div>
+    <div class="site-header__nav-wrap">
+      <nav class="site-header__nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main--about">
+    <div class="about__section">
+      <div class="about-image">
+        <img src="img/about-1.jpg" alt="SV Architetti" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+      <div class="about__text-col">
+        <p class="about__label">About</p>
+        <div class="about__content">
+          <p>Lo studio SV Architetti è uno studio fondato dall'architetto Sara Valleri nel 2023 con sede a Milano.</p>
+          <p>La passione per i viaggi e la scoperta di nuove culture si riflette interamente sui progetti dello studio. Il viaggio è formazione, esperienza, conoscenza, incontro, scambio, cultura, visione e immaginazione.</p>
+          <p>Lavorare con materiali autentici, ricercati che raccontano una storia, un viaggio e una cultura di artigianalità rappresentano una vera e propria convinzione progettuale con cui lo studio avvia qualsiasi tipo di progetto.</p>
+          <p>Si viaggia per ricordare, comprendere l'identità del luogo, catturare una suggestione, apprendere nuove tecniche dagli artigiani del luogo e acquisire nuovi sapori e odori.</p>
+          <p>I progetti dello studio spaziano dall'architettura d'interni, case private e spazi commerciali. Lo studio segue interamente il progetto in ogni sua fase, dal concept alla realizzazione fino al dettaglio.</p>
+          <p>Il rapporto con i clienti, la comprensione delle loro esigenze e l'attenzione per i dettagli si traduce in uno scambio continuo e meticoloso con gli artigiani del luogo.</p>
+          <p>Il risultato è un progetto sartoriale — un equilibrio tra classico, moderno e contemporaneo che porta con sé la condivisione di emozioni mantenendo l'identità del cliente e del luogo.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">© 2025 SV Architetti</p>
+      <p class="site-footer__text">Milan</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    (function() {
+      var img = document.querySelector('.about-image img');
+      if (img) {
+        console.log('Looking for image at:', img.src);
+        console.log('Resolved (full) URL:', img.currentSrc || img.src);
+      }
+    })();
+  </script>
+</body>
+</html>

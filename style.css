@@ -3,8 +3,40 @@
    Luxury editorial minimal · CSS variables & base
    ============================================ */
 
-/* ----- Google Fonts ----- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap');
+@font-face {
+  font-family: 'Akkurat';
+  src: url('fonts/AkkuratLLTT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat';
+  src: url('fonts/AkkuratLLTT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat';
+  src: url('fonts/AkkuratLLTT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AppleGaramond';
+  src: url('fonts/AppleGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AppleGaramond';
+  src: url('fonts/AppleGaramond-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
 
 /* ----- CSS custom properties ----- */
 :root {
@@ -16,8 +48,8 @@
   --color-accent: #1c1c1c;
 
   /* Typography – families */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-ui: 'Montserrat', sans-serif;
+  --font-serif: 'AppleGaramond', Georgia, serif;
+  --font-sans: 'Akkurat', sans-serif;
 
   /* Typography – sizes */
   --text-xs: 0.6875rem;   /* 11px – nav, labels */
@@ -105,8 +137,8 @@ ul, ol {
 /* ----- Typography base ----- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: var(--weight-light);
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
   line-height: 1.2;
   margin: 0 0 var(--space-md);
 }
@@ -147,7 +179,7 @@ p {
 .site-header__logo {
   font-family: var(--font-display);
   font-size: var(--header-logo-size);
-  font-weight: var(--weight-light);
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -284,8 +316,8 @@ body.page-loaded .hero__img-wrap img {
 .hero__title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: var(--weight-light);
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
   line-height: 1.15;
   color: var(--color-text);
   margin: 0;
@@ -343,7 +375,7 @@ body.page-loaded .hero__img-wrap img {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: var(--weight-light);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.5;
   color: var(--color-text);
   margin: 0 0 var(--space-lg);
@@ -502,8 +534,8 @@ body.page-loaded .hero__img-wrap img {
 .page-title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: var(--weight-light);
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
   line-height: 1.15;
   color: var(--color-text);
   margin: 0 0 var(--space-xl);
@@ -523,7 +555,7 @@ body.page-loaded .hero__img-wrap img {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: var(--weight-light);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-muted);
   margin: 0;
 }
@@ -559,7 +591,7 @@ body.page-loaded .hero__img-wrap img {
   text-decoration: none;
   font-family: var(--font-display);
   font-size: 1.3rem;
-  font-weight: var(--weight-regular);
+  font-weight: 700;
   font-style: normal;
   transition: background-color var(--duration) var(--ease);
 }
@@ -586,24 +618,18 @@ body.page-loaded .hero__img-wrap img {
 
 /* ----- Contact page ----- */
 .main--contact {
-  padding-top: var(--space-4xl);
-  padding-bottom: var(--space-4xl);
+  padding: 80px 40px;
 }
 
 .contact__layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4xl);
-  align-items: start;
-  margin-top: var(--space-4xl);
-  max-width: var(--content-max-width);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .contact-info__block {
-  margin-bottom: var(--space-3xl);
+  margin-bottom: 40px;
 }
 
 .contact-info__block:last-child {
@@ -624,7 +650,7 @@ body.page-loaded .hero__img-wrap img {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: var(--weight-light);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.5;
   color: var(--color-text);
   margin: 0;
@@ -643,7 +669,7 @@ body.page-loaded .hero__img-wrap img {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: var(--weight-light);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.5;
   color: var(--color-muted);
   margin: 0 0 var(--space-2xl);
@@ -671,7 +697,7 @@ body.page-loaded .hero__img-wrap img {
   font-family: var(--font-display);
   font-size: var(--text-base);
   font-weight: var(--weight-light);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-text);
   background: transparent;
   border: none;

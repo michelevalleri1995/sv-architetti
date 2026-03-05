@@ -580,8 +580,83 @@ body.page-loaded .hero__img-wrap img {
   color: var(--color-muted);
   margin: 0;
 }
+
+/* ----- Project gallery (full project page with hero + grid) ----- */
+.project-gallery-back {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  text-decoration: none;
+  margin-bottom: var(--space-xl);
+  transition: color var(--duration) var(--ease);
+}
+.project-gallery-back:hover {
+  color: var(--color-text);
+}
+
+.project-gallery__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm);
+}
+
+.project-gallery__location {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-2xl);
+}
+
+.project-gallery-hero {
+  width: 100%;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+.project-gallery-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s var(--ease);
+}
+.project-gallery-hero:hover img {
+  transform: scale(1.03);
+}
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  width: 100%;
+}
+.project-gallery-grid__item {
+  overflow: hidden;
+}
+.project-gallery-grid__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s var(--ease);
+}
+.project-gallery-grid__item:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .main--projects {
-  padding-top: var(--space-4xl);
+  padding-top: 0;
   padding-bottom: var(--space-4xl);
 }
 
@@ -639,7 +714,7 @@ body.page-loaded .hero__img-wrap img {
 
 /* ----- Contact page ----- */
 .main--contact {
-  padding: 80px 40px;
+  padding: 0 40px 80px;
 }
 
 .contact__layout {
@@ -801,7 +876,7 @@ body.page-loaded .hero__img-wrap img {
 
   .main--projects,
   .main--contact {
-    padding-top: var(--space-3xl);
+    padding-top: 0;
     padding-bottom: var(--space-3xl);
   }
 

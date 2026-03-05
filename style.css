@@ -703,6 +703,16 @@ body.page-loaded .hero__img-wrap img {
   transform: translateX(4px);
 }
 
+.project-badge {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
   .project-row {
     padding: var(--space-md) var(--content-padding);

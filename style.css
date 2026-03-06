@@ -349,7 +349,7 @@ body.page-loaded .hero__img-wrap img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 4px;
+  gap: 0;
   width: 100%;
   max-width: var(--content-max-width);
   margin: var(--space-3xl) auto 0;

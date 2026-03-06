@@ -906,8 +906,9 @@ body.page-loaded .hero__img-wrap img {
 
   .home-grid {
     margin-top: var(--space-2xl);
-    padding: 0 var(--content-padding);
+    padding: 0;
     min-height: 400px;
+    gap: 0;
   }
 
   .editorial {
